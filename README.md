@@ -14,6 +14,7 @@ The Simple Cloud Manager has the following classes:
 * Proxy: 
 
 Our VMs file structure is: 
+
 VM #1: Ressource_Manager/
 * middleware/middleware.py (for handling requests from client to proxy, and response back to client)
 * monitoring/ressource_manager.py (rendering for the monitoring cloud dashboard)
