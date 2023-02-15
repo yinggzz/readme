@@ -1,8 +1,8 @@
 
-#Overview
+# Overview
 This is a basic cloud management system that allows users to run non-interactive jobs on a cluster of machines. The system has several key components: nodes, resource pods, resource clusters, a resource manager, a cloud dashboard, a cloud toolset, and jobs. The system assumes that there is a single resource pod and that only non-interactive jobs will be run.
 
-##Class Structure Overview
+## Class Structure Overview
 The Simple Cloud Manager has the following classes:
 
 • Node: represents a machine in the simple cloud. Each node has a specific CPU, memory, and storage limit factor.
@@ -25,7 +25,7 @@ proxy/
 cloud_toolset/
 • cloud_toolset.py (receiving and sending client requests to the resource manager)
 
-##Executing the Cloud Infrastructure
+## Executing the Cloud Infrastructure
 To execute the cloud infrastructure, follow these steps:
 
 1. cd into private folder `cs598-group07-key` containing the private key
@@ -44,8 +44,8 @@ To execute the cloud infrastructure, follow these steps:
 • `cloud abort JOB_ID`: prints out the specified job log
 • `cloud log node NODE_ID`: prints out the entire log file of a specified node.
 
-##Cloud Dashboard
+## Cloud Dashboard
 To view the status of different cloud components (status/name/id of nodes and pods, etc) via a web interface, please use the [url to dashboard](https://winter2023-comp598-group07-02.cs.mcgill.ca/)
 
-##Conclusion
+## Conclusion
 This basic cloud management system allows users to run non-interactive jobs on a cluster of machines. The system is composed of several key components and can be executed using Docker and Docker-Compose.
