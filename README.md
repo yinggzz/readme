@@ -5,13 +5,13 @@ This is a basic cloud management system that allows users to run non-interactive
 ## Class Structure Overview
 The Simple Cloud Manager has the following classes:
 
-* Node: represents a machine in the simple cloud. Each node has a specific CPU, memory, and storage limit factor.
+* Node: represents a machine in the simple cloud (docker container). 
 * Resource Pod: a collection of nodes. We assume a single network is connecting all the machines.
 * Resource Manager: a continuously running daemon that is responsible for making all the management decisions.
 * Cloud Dashboard: a component of the ResourceManager or a standalone web server that is connected to the ResourceManager.
 * Cloud Toolset: commands that are supported by the ResourceManager.
 * Job: represents an actual program running in the machines.
-* Proxy: 
+* Proxy: Handles requests to by carrying out the docker commands to manipulate the docker containers
 
 Our VMs file structure is: 
 
@@ -23,7 +23,7 @@ VM #2:
 proxy/
 * proxy.py (handling client requests)
 
-cloud_toolset/
+VM #3:cloud_toolset/
 * cloud_toolset.py (receiving and sending client requests to the resource manager)
 
 ## Executing the Cloud Infrastructure
